@@ -13,9 +13,9 @@ services:
       timeout: 5s
       start_period: 60s
     environment:
-      MONGO_URL: mongodb://mongodb:27017/empresa
-      OAUTH_AUDIENCE: http://localhost:3000/api/productos
-      OAUTH_URL: https://dev-utn-frc-iaew.auth0.com/
+      MONGO_URL: mongodb://mongodb:27017/library
+      OAUTH_AUDIENCE: http://nose
+      OAUTH_URL: https://dev-je3a1gvesx7lffy0.us.auth0.com/oauth/token
   # Servicio de MongoDB
   mongodb:
     image: mongo:latest   # Utilizamos la imagen oficial de MongoDB desde Docker Hub
