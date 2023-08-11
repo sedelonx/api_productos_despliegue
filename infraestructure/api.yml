@@ -37,11 +37,11 @@ Resources:
             StartPeriod: 60 # Tiempo en segundos para esperar antes de comenzar las comprobaciones de salud después del inicio del contenedor
           Environment:
             - Name: MONGO_URL
-              Value: "mongodb://127.0.0.1:27017/library" # Configura la URL de conexión para tu base de datos
+              Value: "mongodb://127.0.0.1:27017/empresa" # Configura la URL de conexión para tu base de datos
             - Name: OAUTH_AUDIENCE
-              Value: "https://nose" # Configura la URL de conexión para tu base de datos
+              Value: "https://localhost:3000/api/productos" # Configura la URL de conexión para tu base de datos
             - Name: OAUTH_URL
-              Value: "https://dev-je3a1gvesx7lffy0.us.auth0.com/oauth/token" # Configura la URL de conexión para tu base de datos
+              Value: "https://dev-utn-frc-iaew.auth0.com/" # Configura la URL de conexión para tu base de datos
         - Name: mongodb
           Image: "mongo:latest" # Asegúrate de utilizar la imagen de MongoDB adecuada
           Cpu: 512

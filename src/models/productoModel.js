@@ -1,4 +1,4 @@
-const { configDotenv } = require("dotenv");
+
 const mongoose = require("mongoose");
 require("dotenv").config();
 

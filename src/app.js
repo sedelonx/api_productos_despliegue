@@ -1,5 +1,7 @@
 const express = require("express");
 const productosRouter = require("./routes/productos");
+
+
 const errorHandler = require("./middlewares/errorHandler");
 
 const { auth } = require("express-oauth2-jwt-bearer");
@@ -15,6 +17,8 @@ const oauthCheck = auth({
 
 const app = express();
 app.use(express.json())
+
+
 
 
 // Ruta base
